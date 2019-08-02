@@ -1,0 +1,38 @@
+{
+  "name": "@spaceavocado/type-check",
+  "version": "1.0.0",
+  "description": "Collection of small javascript type check functions.",
+  "main": "lib/type-check.js",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "build": "webpack --mode=production",
+    "test": "jest",
+    "test:run": "yarn test"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:spaceavocado/type-check.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spaceavocado/type-check/issues"
+  },
+  "homepage": "https://github.com/spaceavocado/type-check",
+  "keywords": [
+    "type"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.13.0",
+    "jest": "^24.8.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  }
+}

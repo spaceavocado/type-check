@@ -1,0 +1,5 @@
+# Lib
+lib/*.js
+
+# Tests
+**/*.test.js
