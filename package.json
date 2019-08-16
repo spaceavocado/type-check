@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Collection of small javascript type check functions.",
   "main": "lib/type-check.js",
+  "module": "src/index.js",
   "files": [
     "/lib"
   ],
