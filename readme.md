@@ -2,16 +2,11 @@
 Collection of small javascript type check functions.
 
 ## Installation via NPM or Yarn
-```sh
-npm install -D @spaceavocado/type-check
-```
-or 
-```sh
-yarn add @spaceavocado/type-check -D
-```
+```npm install -D @spaceavocado/type-check``` or ```yarn add @spaceavocado/type-check -D```
 
 ## Usage
-The library is built as [UMD](https://github.com/umdjs/umd) module, therefore is capable of working everywhere, be it in the client, on the server or elsewhere. The usage below showcases ES6 module import.
+The library is built as Exported as **CommonJS** module and as **ESM** module.
+
 ### Import All Functions
 ```javascript
 import tc from '@spaceavocado/type-check';
@@ -139,3 +134,6 @@ tc.isEnumKey('C', myEnum);
 tc.not.isEnumKey(myEnum.A, myEnum);
 // => false
 ```
+
+## License
+Svelte Router is released under the MIT license. See [LICENSE.txt](https://github.com/spaceavocado/type-check/blob/master/LICENSE.txt).

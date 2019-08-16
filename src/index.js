@@ -9,7 +9,7 @@
  * @param {mixed} value tested value
  * @return {boolean} result of the test
  */
-function isString(value) {
+export function isString(value) {
   return typeof value === 'string' || value instanceof String;
 }
 
@@ -19,7 +19,7 @@ function isString(value) {
  * @return {boolean} result of the test
  * @throws {module:type-check.TypeCheckError} Unexpected type
  */
-function isEmpty(value) {
+export function isEmpty(value) {
   // String
   if (isString(value)) {
     return value.trim().length == 0;
@@ -40,7 +40,7 @@ function isEmpty(value) {
  * @param {mixed} value tested value
  * @return {boolean} result of the test
  */
-function isNumber(value) {
+export function isNumber(value) {
   return typeof value === 'number' && isFinite(value);
 }
 
@@ -49,7 +49,7 @@ function isNumber(value) {
  * @param {mixed} value tested value
  * @return {boolean} result of the test
  */
-function isFunction(value) {
+export function isFunction(value) {
   return typeof value === 'function';
 }
 
@@ -58,7 +58,7 @@ function isFunction(value) {
  * @param {mixed} value tested value
  * @return {boolean} result of the test
  */
-function isObject(value) {
+export function isObject(value) {
   return isNullOrUndefined(value) == false
     && typeof value === 'object'
     && value.constructor === Object;
@@ -69,7 +69,7 @@ function isObject(value) {
  * @param {mixed} value tested value
  * @return {boolean} result of the test
  */
-function isError(value) {
+export function isError(value) {
   return value instanceof Error;
 }
 
@@ -78,7 +78,7 @@ function isError(value) {
  * @param {mixed} value tested value
  * @return {boolean} result of the test
  */
-function isNullOrUndefined(value) {
+export function isNullOrUndefined(value) {
   return typeof value === 'undefined' || value === null;
 }
 
@@ -87,7 +87,7 @@ function isNullOrUndefined(value) {
  * @param {mixed} value tested value
  * @return {boolean} result of the test
  */
-function isArray(value) {
+export function isArray(value) {
   return Array.isArray(value);
 }
 
@@ -96,7 +96,7 @@ function isArray(value) {
  * @param {mixed} value tested value
  * @return {boolean} result of the test
  */
-function isSymbol(value) {
+export function isSymbol(value) {
   return typeof value === 'symbol';
 }
 
@@ -106,7 +106,7 @@ function isSymbol(value) {
  * @param {object} source enum source object
  * @return {boolean} result of the test
  */
-function isEnumKey(key, source) {
+export function isEnumKey(key, source) {
   if (isObject(source) == false || isString(key) == false) {
     return false;
   }
