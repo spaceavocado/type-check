@@ -92,6 +92,18 @@ export function isArray(value) {
 }
 
 /**
+ * Is Promise
+ * Basic check based on assumed presence
+ * of then function on the given object.
+ * @param {mixed} value tested value
+ * @return {boolean} result of the test
+ */
+export function isPromise(value) {
+  return isNullOrUndefined(value) == false
+    && isFunction(value.then);
+}
+
+/**
  * Is ES6 Symbol
  * @param {mixed} value tested value
  * @return {boolean} result of the test
@@ -124,6 +136,7 @@ const TESTS = {
   isNullOrUndefined,
   isArray,
   isSymbol,
+  isPromise,
   isEnumKey,
 };
 

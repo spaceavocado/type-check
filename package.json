@@ -1,6 +1,6 @@
 {
   "name": "@spaceavocado/type-check",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Collection of small javascript type check functions.",
   "main": "lib/type-check.js",
   "module": "lib/type-check.esm.js",
@@ -10,8 +10,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "test": "jest",
-    "test:run": "yarn test"
+    "test": "jest"
   },
   "license": "MIT",
   "repository": {

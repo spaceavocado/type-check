@@ -118,6 +118,15 @@ tc.not.isSymbol(new Symbol());
 // => false
 ```
 
+### isPromise
+```javascript
+tc.isPromise(new Promise((resolve, reject) => {}));
+// => true
+
+tc.not.isPromise(new Promise((resolve, reject) => {}));
+// => false
+```
+
 ### isEnumKey
 ```javascript
 const myEnum = {

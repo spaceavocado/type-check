@@ -130,3 +130,13 @@ test('Enum Key', () => {
 test('Not Modifier', () => {
   expect(tc.not.isString('Hello')).toBe(false);
 });
+test('Promise', () => {
+  expect(tc.isPromise('Hello')).toBe(false);
+  expect(tc.isPromise({})).toBe(false);
+  expect(tc.isPromise([])).toBe(false);
+  expect(tc.isPromise(5)).toBe(false);
+  expect(tc.isPromise(true)).toBe(false);
+  expect(tc.isPromise(null)).toBe(false);
+  expect(tc.isPromise(undefined)).toBe(false);
+  expect(tc.isPromise(new Promise((res, rej) => {}))).toBe(true);
+});
